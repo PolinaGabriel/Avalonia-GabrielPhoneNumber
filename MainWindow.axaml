@@ -6,7 +6,7 @@
         x:Class="GabrielPhoneNumber.MainWindow"
         Title="GabrielPhoneNumber"
 		Width="810" Height="260">
-	<Grid ColumnDefinitions="20 70 70 70 70 70 70 70 70 70 70 70 20" RowDefinitions="20 60 20 60 20 60 20">
+	<Grid ShowGridLines="True" ColumnDefinitions="20 70 70 70 70 70 70 70 70 70 70 70 20" RowDefinitions="20 60 20 60 20 60 20">
 		<StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">
 			<TextBlock>
 				Введите Ваш номер телефона:
@@ -171,7 +171,7 @@
 				Введите Ваш номер телефона:
 			</TextBlock>
 		</StackPanel>
-		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="10" VerticalAlignment="Center">
+		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="11" VerticalAlignment="Center">
 			<Slider x:Name="phoneSlider" IsSnapToTickEnabled="True" TickFrequency="1" Minimum="00000000000" Maximum="99999999999">
 			</Slider>
 		</StackPanel>
@@ -183,13 +183,17 @@
 				Введите Ваш номер телефона:
 			</TextBlock>
 		</StackPanel>
-		<StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
-			<TextBlock x:Name="phone" FontSize="20" Text="00000000000">
-			</TextBlock>
+		<StackPanel Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
+			<TextBlock x:Name="phone" FontSize="20" Text="+0 (000) 00-00-000" Padding="0" HorizontalAlignment="Center"></TextBlock>
 		</StackPanel>
-		<StackPanel Grid.Column="3" Grid.Row="5" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-			<Button x:Name="phoneButton" FontSize="20" Padding="3 0">
-				+
+		<StackPanel Grid.Column="5" Grid.Row="5" VerticalAlignment="Bottom">
+			<Button x:Name="phoneButtonPlus" FontSize="20" Padding="3 0" HorizontalAlignment="Stretch">
+				<TextBlock HorizontalAlignment="Center">+</TextBlock>
+			</Button>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom">
+			<Button x:Name="phoneButtonMinus" FontSize="20" Padding="3 0" HorizontalAlignment="Stretch">
+				<TextBlock HorizontalAlignment="Center">-</TextBlock>
 			</Button>
 		</StackPanel>
 	</Grid>
