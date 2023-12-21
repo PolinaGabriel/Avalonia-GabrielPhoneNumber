@@ -2,176 +2,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="810" d:DesignHeight="260"
+        mc:Ignorable="d" d:DesignWidth="440" d:DesignHeight="260"
         x:Class="GabrielPhoneNumber.MainWindow"
         Title="GabrielPhoneNumber"
 		Width="810" Height="260">
-	<Grid ShowGridLines="True" ColumnDefinitions="20 70 70 70 70 70 70 70 70 70 70 70 20" RowDefinitions="20 60 20 60 20 60 20">
+	<Grid ShowGridLines="True" ColumnDefinitions="20 80 80 80 80 80 20" RowDefinitions="20 60 20 60 20 60 20">
 		<StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">
-			<TextBlock>
-				Введите Ваш номер телефона:
-			</TextBlock>
+			<TextBlock>Введите номер телефона:</TextBlock>
 		</StackPanel>
-		<StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
-		    <ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-	    </StackPanel>
-		<StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
+		<StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+			<ComboBox x:Name="firstNumber" MaxDropDownHeight="100" FontSize="14" MinHeight="14"></ComboBox>
 		</StackPanel>
-		<StackPanel Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
+		<StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+			<ComboBox  x:Name="secondNumber" MaxDropDownHeight="100" FontSize="14" MinHeight="14"></ComboBox>
 		</StackPanel>
-		<StackPanel Grid.Column="4" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
+		<StackPanel Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+			<ComboBox x:Name="thirdNumber" MaxDropDownHeight="100" FontSize="14" MinHeight="14"></ComboBox>
 		</StackPanel>
-		<StackPanel Grid.Column="5" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
+		<StackPanel Grid.Column="4" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+			<ComboBox x:Name="fourthNumber" MaxDropDownHeight="100" FontSize="14" MinHeight="14"></ComboBox>
 		</StackPanel>
-		<StackPanel Grid.Column="6" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Grid.Column="7" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Grid.Column="8" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Grid.Column="9" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Grid.Column="10" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Grid.Column="11" Grid.Row="1" VerticalAlignment="Bottom">
-			<ComboBox MaxDropDownHeight="100" FontSize="14" MinHeight="14">
-				<ComboBoxItem>0</ComboBoxItem>
-				<ComboBoxItem>1</ComboBoxItem>
-				<ComboBoxItem>2</ComboBoxItem>
-				<ComboBoxItem>3</ComboBoxItem>
-				<ComboBoxItem>4</ComboBoxItem>
-				<ComboBoxItem>5</ComboBoxItem>
-				<ComboBoxItem>6</ComboBoxItem>
-				<ComboBoxItem>7</ComboBoxItem>
-				<ComboBoxItem>8</ComboBoxItem>
-				<ComboBoxItem>9</ComboBoxItem>
-			</ComboBox>
+		<StackPanel Grid.Column="5" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+			<ComboBox x:Name="fifthNumber" MaxDropDownHeight="100" FontSize="14" MinHeight="14"></ComboBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3">
-			<TextBlock>
-				Введите Ваш номер телефона:
-			</TextBlock>
+			<TextBlock>Введите номер телефона:</TextBlock>
 		</StackPanel>
-		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="11" VerticalAlignment="Center">
+		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" VerticalAlignment="Center">
 			<Slider x:Name="phoneSlider" IsSnapToTickEnabled="True" TickFrequency="1" Minimum="00000000000" Maximum="99999999999">
 			</Slider>
 		</StackPanel>
@@ -179,9 +36,7 @@
 			<TextBlock Text="{Binding #phoneSlider.Value, StringFormat={}{0:+0 (000) 00-00-000}} Mode=OneWay}"></TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3">
-			<TextBlock>
-				Введите Ваш номер телефона:
-			</TextBlock>
+			<TextBlock>Введите номер телефона:</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
 			<TextBlock x:Name="phone" FontSize="20" Text="+0 (000) 00-00-000" Padding="0" HorizontalAlignment="Center"></TextBlock>
